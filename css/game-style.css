@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "Spartan Black";
+    src: url('../fonts/Spartan-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Spartan Extra Bold";
+    src: url('../fonts/Spartan-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Spartan Light";
+    src: url('../fonts/Spartan-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Pixel";
+    src: url('../fonts/Pixel-Digivolve.otf');
+}
+
+body{
+    font-family: "Spartan Black";
+    background-color: #BB0045;
+    color: #ffffff;
+    height: 100%;
+}
+
+header, main, footer{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+/* Start Screen*/
+.footer-content{
+    font-size: 1.6em;
+}
+
+#activision-logo{
+    width: 13vw;
+    margin-bottom: .7em;
+}
+
+#before_title{
+    font-size: .6em;
+    font-family: "Spartan Light";
+}
+
+#title{
+    font-size: 4.6em;
+    font-family: "Spartan Extra Bold";
+}
+
+#after_title{
+    font-size: 1.5em;
+    color: #f5fe00;
+    margin: 0em;
+}
+
+#capa-image{
+    width: 34vw;
+    margin: .7em;
+}
+
+#bt-start{
+    font-family: "Pixel";
+    font-size: .95em;
+    width: 90px;
+    height: 4.5vh;
+    margin: .5em;
+    border-radius: 10px;
+}
+
+.black-bar{
+    width: 1100px;
+    height: 100px;
+    background-color: #ADADAD;
+}
+
+/*Game Screen*/
+[game-screen] {
+    position: relative;
+    border-top: 5px solid;
+    border-left: 5px solid;
+    border-right: 5px solid;    
+    border-bottom: 0;
+    height: 500px;
+    width: 1100px;
+    background-color: #2931BD;
+    overflow: hidden;
+}
+
+#game-over{
+    font-family: "Pixel";
+    font-size: 1.5em;
+    color: #EFEF4A;
+    display: none;
+}
+
+#black-bar{
+    width: 1100px;
+    height: 5px;
+    background-color: #000000;
+    border-top: 0;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-bottom: 0;
+}
+
+#infos-screen{
+    width: 1100px;
+    height: 100px;
+    background-color: #ADADAD;
+    border-top: 0;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+#ship {
+    position: absolute;
+    width: 60px;
+}
+
+#point{
+    width:70px;
+    height: 100%;
+}
+
+#points{
+    font-family: "Pixel";
+    font-size: 1.5em;
+    color: #EFEF4A;
+}
+
+#fuel-progress{
+    height: 25px;
+    width: 360px;
+    border: 2px solid black;
+}
+
+#fuel-bar{
+    background-color: #EFEF4A;
+    height: 100%;
+    border-right: 2px solid black;
+}
+
+#fuel{
+    width:45px;
+    height: 100%;
+}
+
+#barrier-config{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+#ground {
+    height: 100px;
+    width: 360px;
+    background: #6b9c42;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+/* Colors
+#BB0045
+#EFEF4A
+#2931BD
+#6b9c42
+#ADADAD
+#8C8C8C
+*/
